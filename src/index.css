@@ -56,34 +56,36 @@
    ========================================================================== */
 
 @theme {
-  /* ---- سُلّم الخلفيات (مُعدّل: فصل حقيقي بين الطبقات) ------------------- */
-  --color-bg: #1f1425;          /* الصفحة — أعمق من الأصل لعمق فاخر        */
-  --color-bg-deep: #140d19;     /* قاع الأقسام — نفس الدرجة 284°، أغمق     */
-  --color-bg-elev: #2d1c33;     /* اللون الأصلي — الآن شريط أقسام مرتفع    */
-  --color-surface: #3e2a48;     /* البطاقات — 1.38:1 فوق الخلفية ✓         */
-  --color-surface-2: #482b52;   /* Accent — تمرير / شرائح / حشوات          */
+  /* ---- ألوان الخلفية: سكري وكريمي ------------------------------------ */
+  --color-bg: #fbf7f4;
+  --color-bg-deep: #f5eeea;
+  --color-bg-elev: #fffaf8;
+  --color-surface: #fffdfb;
+  --color-surface-2: #f9e9eb;
 
-  /* ---- الهوية البنفسجية ------------------------------------------------ */
-  --color-primary: #8e18b8;     /* تعبئة فقط — ممنوع كنص (2.51:1)          */
-  --color-primary-300: #d181ef; /* نفس الدرجة اللونية 284° — 6.82:1 ✓ AA   */
-  --color-secondary: #6d2c85;   /* منتصف التدرّج / قلب الوهج               */
+  /* ---- الهوية: وردي باهت + وردي غباري + سماوي ------------------------- */
+  --color-primary: #d9a8b2;
+  --color-primary-300: #b97886;
+  --color-secondary: #c98f9b;
 
-  /* ---- سُلّم الأبيض (العمود الفقري للواجهة) ---------------------------- */
-  --color-text-1: #ffffff;                    /* 17.7:1 — العناوين والأزرار */
-  --color-text-2: rgb(255 255 255 / 0.72);    /*  9.5:1 — النصوص            */
-  --color-text-3: rgb(255 255 255 / 0.56);    /*  6.2:1 — التعليقات         */
-  --color-line: rgb(255 255 255 / 0.08);
-  --color-line-strong: rgb(255 255 255 / 0.16);
-  --color-fill-1: rgb(255 255 255 / 0.04);
-  --color-fill-2: rgb(255 255 255 / 0.07);
+  /* ---- النصوص: بني دافئ بدل الأسود القاسي ----------------------------- */
+  --color-text-1: #4a3738;
+  --color-text-2: rgb(74 55 56 / 0.78);
+  --color-text-3: rgb(74 55 56 / 0.56);
+
+  --color-line: rgb(120 91 94 / 0.12);
+  --color-line-strong: rgb(120 91 94 / 0.20);
+
+  --color-fill-1: rgb(217 168 178 / 0.08);
+  --color-fill-2: rgb(217 168 178 / 0.14);
 
   /* ---- الخطوط ---------------------------------------------------------- */
-  --font-sans: "Thmanyah Sans", system-ui, sans-serif;       /* الواجهة    */
-  --font-display: "Thmanyah Display", Georgia, serif;         /* العناوين   */
-  --font-serif: "Thmanyah Serif", Georgia, serif;             /* السرد      */
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;      /* الأرقام    */
+  --font-sans: "Thmanyah Sans", system-ui, sans-serif;
+  --font-display: "Thmanyah Display", Georgia, serif;
+  --font-serif: "Thmanyah Serif", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
-  /* ---- مقياس الطباعة (مرن) --------------------------------------------- */
+  /* ---- مقياس الطباعة --------------------------------------------------- */
   --text-display: clamp(2.75rem, 7vw, 6rem);
   --text-display--line-height: 1.15;
   --text-h2: clamp(2rem, 4.5vw, 3.5rem);
@@ -95,20 +97,18 @@
   --text-label: 0.78rem;
   --text-label--line-height: 1;
 
-  /* ---- الحركة ----------------------------------------------------------- */
+  /* ---- الحركة ---------------------------------------------------------- */
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-quart: cubic-bezier(0.65, 0, 0.35, 1);
 
-  /* ---- الرسوم المتحرّكة -------------------------------------------------- */
   --animate-float: float 7s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-  /* steps(2, jump-none): وميضٌ حادّ كمؤشّر المحرّر، لا تلاشٍ ناعم */
   --animate-caret: caret 1s steps(2, jump-none) infinite;
 
-  /* ---- الأنصاف والظلال -------------------------------------------------- */
+  /* ---- الأنصاف والظلال ------------------------------------------------- */
   --radius-card: 20px;
   --radius-img: 16px;
-  --shadow-lift: 0 24px 60px -20px rgb(0 0 0 / 0.6);
-  --shadow-glow: 0 0 40px -8px rgb(142 24 184 / 0.45);
+--shadow-lift: 0 18px 45px -22px rgb(120 91 94 / 0.12);
+--shadow-glow: 0 0 35px -10px rgb(217 168 178 / 0.28);
 }
 
 @layer base {
@@ -464,7 +464,7 @@
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.18;
     mix-blend-mode: overlay;
     background-image:
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='2.4' intercept='-0.7'/%3E%3CfeFuncG type='linear' slope='2.4' intercept='-0.7'/%3E%3CfeFuncB type='linear' slope='2.4' intercept='-0.7'/%3E%3CfeFuncA type='linear' slope='0' intercept='1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
@@ -481,7 +481,7 @@
     inset: 0;
     z-index: 60;
     pointer-events: none;
-    opacity: 0.035;
+    opacity: 0.015;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
