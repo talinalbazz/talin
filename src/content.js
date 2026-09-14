@@ -103,7 +103,7 @@ export const CONTENT = {
       ],
     },
 
-    Projects: {
+    projects: {
       index: '03',
       kicker: 'مشاريعي',
 
