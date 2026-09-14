@@ -67,7 +67,7 @@ export function Footer() {
             href="#home"
             className="tap-target inline-flex items-center justify-center gap-2 transition-colors duration-200 hover:text-text-1"
           >
-            {t.footer.top}
+            {t?.footer?.top || (lang === 'ar' ? 'للأعلى' : 'Back to top')}
             <ArrowUp className="h-3.5 w-3.5" />
           </a>
         </div>
