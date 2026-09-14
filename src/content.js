@@ -103,7 +103,7 @@ export const CONTENT = {
       ],
     },
 
-    projects: {
+    Projects: {
       index: '03',
       kicker: 'مشاريعي',
 
@@ -259,3 +259,100 @@ export const CONTENT = {
     },
   },
 }
+
+export const PROJECTS = [
+  
+  {
+    id: '01',
+    kind: 'code',
+    featured: true,
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'نظام ذكي لاستقطاب اللاعبين',
+      en: 'AI Player Recruitment System',
+    },
+    description: {
+      ar: 'مشروع يهدف إلى استخدام البيانات والذكاء الاصطناعي لدعم عملية استقطاب اللاعبين ومساعدة الأندية على مقارنة الخيارات وفق احتياجاتها. المشروع حاليًا قيد التطوير وأعمل على تحسينه وتطوير فكرته.',
+      en: 'A project exploring how data and AI can support player recruitment and help clubs compare options based on their needs. The project is currently under development and continues to evolve.',
+    },
+    tech: ['Python', 'AI', 'Data Science', 'GitHub'],
+  },
+
+  {
+    id: '02',
+    kind: 'code',
+    featured: true,
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'مشاريع تحليل البيانات',
+      en: 'Data Analysis Projects',
+    },
+    description: {
+      ar: 'مجموعة من التجارب والمشاريع البسيطة التي أعمل عليها لتحليل البيانات واكتشاف الأنماط وتحويل البيانات إلى معلومات يمكن فهمها والاستفادة منها.',
+      en: 'A collection of small projects and experiments focused on exploring data, finding patterns, and turning raw information into useful insights.',
+    },
+    tech: ['Python', 'Data Analysis'],
+  },
+
+  {
+    id: '03',
+    kind: 'code',
+    featured: true,
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'لوحات بيانات باستخدام Power BI',
+      en: 'Power BI Dashboards',
+    },
+    description: {
+      ar: 'تجارب في بناء لوحات تفاعلية تساعد على عرض البيانات بطريقة أبسط وأكثر وضوحًا، مع التركيز على التصور واستخراج المعلومات المهمة.',
+      en: 'Experiments with interactive dashboards that make data easier to understand, with a focus on visualization and finding meaningful insights.',
+    },
+    tech: ['Power BI', 'Data Visualization'],
+  },
+
+  {
+    id: '04',
+    kind: 'code',
+    featured: true,
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'تجارب Excel وتحليل البيانات',
+      en: 'Excel Data Projects',
+    },
+    description: {
+      ar: 'مشاريع وتجارب بسيطة باستخدام Excel لتنظيم البيانات وتحليلها وإنشاء تقارير واضحة منها.',
+      en: 'Small projects and experiments using Excel to organize, analyze, and turn data into clear reports.',
+    },
+    tech: ['Microsoft Excel', 'Data Analysis'],
+  },
+
+  {
+    id: '05',
+    kind: 'code',
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'تجارب برمجية',
+      en: 'Coding Experiments',
+    },
+    description: {
+      ar: 'مشاريع وتجارب صغيرة أطبق فيها ما أتعلمه وأجرب أفكارًا وتقنيات جديدة.',
+      en: 'Small projects and experiments where I practice what I learn and explore new ideas and technologies.',
+    },
+    tech: ['Python', 'GitHub'],
+  },
+
+  {
+    id: '06',
+    kind: 'code',
+    url: 'https://github.com/talin0315',
+    title: {
+      ar: 'مشاريع قادمة',
+      en: 'Coming Projects',
+    },
+    description: {
+      ar: 'المساحة هنا مفتوحة للمشاريع والأفكار القادمة التي سأعمل عليها وأضيفها مع تطور رحلتي.',
+      en: 'A space for future projects and ideas that I’ll build and add as my journey continues.',
+    },
+    tech: ['Learning', 'Exploring'],
+  },
+]
