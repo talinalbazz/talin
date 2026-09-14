@@ -1,4 +1,4 @@
-```js
+js
 /**
  * Talin's Portfolio
  * Personal content — Arabic & English
@@ -258,4 +258,4 @@ export const CONTENT = {
       },
     },
   },
-}```
+}
