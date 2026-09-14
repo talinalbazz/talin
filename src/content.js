@@ -137,5 +137,125 @@ export const CONTENT = {
         submit: 'إرسال الرسالة',
         sending: 'جارٍ الإرسال…',
         success: 'وصلت الرسالة، شكرًا لك 🩷',
-        error: 'تعذّر الإرسال. تقدر تتواصل
-```
+        error: 'تعذّر الإرسال. تقدر تتواصل' , 
+       },
+    },
+  },
+
+  en: {
+    dir: 'ltr',
+
+    hero: {
+      titleBefore: 'I learn, I experiment,',
+      titleAccent: 'and I turn ideas',
+      titleAfter: 'into projects.',
+      subtitle:
+        "I'm Talin, an AI & Data Science student from Makkah. I love learning new things, trying them out myself, and seeing where an idea can take me.",
+      ctaPrimary: 'View My Projects',
+      ctaSecondary: 'About Me',
+      scroll: 'Scroll down',
+    },
+
+    about: {
+      index: '01',
+      kicker: 'About Me',
+
+      paragraphs: [
+        "I'm Talin, 22 years old, studying Artificial Intelligence and Data Science. I love learning new things and trying them out myself — when an idea comes to me, I usually try to turn it into a project instead of leaving it as just an idea.",
+
+        "I enjoy working on different things and learning through experience. Some of the things I've enjoyed most are data analysis with Excel and Power BI, along with Python and AI. I'm still learning and experimenting, and I love seeing how each idea can grow a little more every time.",
+
+        "Outside of studying and projects, I enjoy reading, sports, and movies, and I like discovering new things from time to time. This site is a place where I gather what I'm working on, the projects I'm experimenting with, and the ideas I want to keep developing over time.",
+      ],
+
+      education: {
+        kicker: 'Currently',
+        degree: 'AI & Data Science Student',
+        school: 'Learning, experimenting, and growing',
+        period: 'In progress',
+      },
+    },
+
+    skills: {
+      index: '02',
+      kicker: 'Skills',
+
+      titleBefore: 'Things',
+      titleAccent: "I'm learning",
+      titleAfter: 'and love exploring.',
+
+      intro:
+        "Not everything here is something I consider myself an expert in — some I'm still learning, and some I use in my projects and experiments.",
+
+      groups: [
+        {
+          title: 'AI & Programming',
+          items: [
+            'Python',
+            'Artificial Intelligence',
+            'Data Science',
+            'Machine Learning',
+          ],
+        },
+
+        {
+          title: 'Data Analysis',
+          items: [
+            'Microsoft Excel',
+            'Power BI',
+            'Data Analysis',
+            'Data Visualization',
+          ],
+        },
+
+        {
+          title: 'Things I Explore',
+          items: [
+            'Git & GitHub',
+            'Web Development',
+            'Building Projects',
+            'Learning New Tools',
+          ],
+        },
+      ],
+    },
+
+    projects: {
+      index: '03',
+      kicker: 'Projects',
+
+      titleBefore: 'Ideas',
+      titleAccent: 'I turn',
+      titleAfter: 'into real things.',
+
+      intro:
+        "Here I share the projects and experiments I've worked on. Some are simple, some are still in progress, and I like coming back to improve them over time.",
+
+      viewProject: 'View Project',
+      viewCode: 'View Code',
+      moreTitle: 'Other Experiments & Projects',
+    },
+
+    contact: {
+      index: '04',
+      kicker: 'Contact',
+
+      titleBefore: 'Got an idea?',
+      titleAccent: "Let's talk",
+      titleAfter: 'about it.',
+
+      intro:
+        "If you have an idea, a project, or something new you'd like to try, I'd love to hear about it.",
+
+      form: {
+        name: 'Name',
+        email: 'Email',
+        message: 'Message',
+        submit: 'Send Message',
+        sending: 'Sending…',
+        success: 'Message sent, thank you 🩷',
+        error: 'Failed to send. You can reach me directly by email.',
+      },
+    },
+  },
+}```
