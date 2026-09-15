@@ -21,7 +21,7 @@ import { useState } from 'react'
  */
 const POSES = {
   point: '/avatar/tot1.png',
-  think: '/avatar/tot1.png',
+  think: '/avatar/tot2.png',
   smile: '/avatar/tot1.png',
   wink: '/avatar/tot1.png',
 }
