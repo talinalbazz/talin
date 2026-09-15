@@ -42,8 +42,8 @@ export function Reveal({ children, delay = 0, y = 24, className = '', as = 'div'
  * البنفسجي المصمت محجوز لزرّ الإرسال وحده في نهاية الصفحة.
  */
 const buttonStyles = {
-  primary:
-    'bg-white text-bg hover:bg-white/90 border border-transparent',
+   primary:
+    'bg-primary-300 text-white hover:bg-secondary border border-transparent',
   secondary:
     'bg-transparent text-text-1 border border-line-strong hover:border-primary-300/40 hover:bg-fill-1',
   brand:
