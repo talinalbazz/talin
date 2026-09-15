@@ -23,7 +23,7 @@ const POSES = {
   point: '/avatar/tot1.png',
   think: '/avatar/tot2.png',
   smile: '/avatar/tot1.png',
-  wink: '/avatar/tot1.png',
+  wink: '/avatar/tot2.png',
 }
 
 export function Avatar({ pose = 'smile', className = '', alt = '', glow = false }) {
