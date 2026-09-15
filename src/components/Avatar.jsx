@@ -20,10 +20,10 @@ import { useState } from 'react'
  * If a file is missing the element quietly disappears — no broken-image icon.
  */
 const POSES = {
-  point: '/avatar/point.svg',
-  think: '/avatar/think.svg',
-  smile: '/avatar/smile.svg',
-  wink: '/avatar/wink.svg',
+  point: '/avatar/tot1.png',
+  think: '/avatar/tot1.png',
+  smile: '/avatar/tot1.png',
+  wink: '/avatar/tot1.png',
 }
 
 export function Avatar({ pose = 'smile', className = '', alt = '', glow = false }) {
